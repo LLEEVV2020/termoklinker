@@ -1,4 +1,7 @@
 @import "base/reset/normalize";
+@import "base/reset/reset";
+@import "base/grid/main";
+
 
 
 @supports not (font-size: calc(5%)) {
@@ -6,3 +9,5 @@
         display: grid;
     }
 }
+
+@import "test";

@@ -5,6 +5,8 @@
     <title>scroll проект</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" href="font/gothampro/stylesheet.css">
     <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     
@@ -13,7 +15,12 @@
 
     <div class="site">
         <header>
-            <div class="c-side">
+            <div class="container d-flex align-items-center justify-content-between">
+                <a class="logo" href="#">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <a data-fancybox data-src="#modal" href="javascript:;" class="header-button">Задать вопрос</a>
+                <a data-fancybox data-animation-duration="700" data-src="#Modal2" href="javascript:;" class="header-button">Вызвать замерщика</a>
                 
                 <div class="contacts">
                     <div class="header-city">Санкт-Петербург</div>
@@ -23,24 +30,13 @@
                         <a href="tel:88126482241" rel="nofollow" class="tk-btn-label">+7 (812) 648-22-41</a>
                     </div>
                 </div>
-
-                <a data-fancybox data-src="#modal" href="javascript:;" class="header-button">Задать вопрос</a>
-
-                <a class="logo">
-                    <img src="img/logo.png" alt="">
-                    <span>EcoStone</span>
-                </a>
-
-                <a data-fancybox data-animation-duration="700" data-src="#Modal2" href="javascript:;" class="header-button">Вызвать замерщика
-
-                </a>
-                
+    
             </div>    
         </header>
         <section>
-                <a data-fancybox="gallery" href="img/logo.png"><img style="width: 80px;" src="img/logo.png"></a>
+                <!--<a data-fancybox="gallery" href="img/logo.png"><img style="width: 80px;" src="img/logo.png"></a>
                 <a  data-fancybox="gallery" href="img/logo.png"><img style="width: 80px;" src="img/logo.png"></a>
-        </section>
+        --></section>
         
 
         <footer ></footer>  

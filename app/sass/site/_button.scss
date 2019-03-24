@@ -1,5 +1,5 @@
 .header-button{
-    border: 1px solid #feb200;
+    border: 1px solid $primary-color;
     border-radius: 5px;
     display: block;
     width: 100%;
@@ -7,4 +7,14 @@
     color: #ffdc00;
     font-size: 14px;
     padding: 12px;
+    
+    text-align: center;
+
+    max-width: 200px;
+}
+.header-button:hover, 
+.header-button:active {
+    background-color: $primary-color;
+    color: #323232;
+    text-decoration: none;
 }

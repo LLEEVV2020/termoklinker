@@ -422,27 +422,49 @@ display: block;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  font-size: 12px; }
+
+body {
+  font-family: 'Gotham Pro', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.3; }
+
 a {
   text-decoration: none; }
 
 header {
   background-color: #323232;
-  padding: 10px 0;
+  padding: 2px 0;
   color: #fff; }
+  header .contacts {
+    font-size: 16px; }
   header .header-city,
   header .header-phone a {
-    color: #feb200; }
+    color: #feb200;
+    font-size: 18px; }
+  header .header-phone a {
+    border-bottom: 1px solid transparent;
+    text-decoration: none; }
+  header .header-phone a:hover {
+    border-bottom-color: #feb200; }
   header .logo {
     border-bottom: 0;
-    margin: 0 auto;
-    display: block;
-    height: 40px; }
+    text-align: center;
+    display: block; }
     header .logo img {
       display: block;
-      width: 80px; }
-
-.c-side {
-  max-width: 1180px; }
+      width: 172px; }
+    header .logo span {
+      margin-top: 5px;
+      line-height: 1;
+      display: block;
+      font-size: 22px;
+      font-family: Helvetica,Arial,sans-serif;
+      color: #fff; }
+    header .logo:hover {
+      -webkit-transform: scale(1.025);
+      transform: scale(1.025); }
 
 .header-button {
   border: 1px solid #feb200;
@@ -452,7 +474,19 @@ header {
   text-transform: uppercase;
   color: #ffdc00;
   font-size: 14px;
-  padding: 12px; }
+  padding: 12px;
+  text-align: center;
+  max-width: 200px; }
+
+.header-button:hover,
+.header-button:active {
+  background-color: #feb200;
+  color: #323232;
+  text-decoration: none; }
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1180px; } }
 
 .mastheader {
   background: #b46ae3;

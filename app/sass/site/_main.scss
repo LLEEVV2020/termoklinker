@@ -1,3 +1,12 @@
+html{
+    font-size: 12px;
+}
+body{
+    font-family: 'Gotham Pro', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
 a{
     text-decoration: none;
 }
@@ -5,29 +14,50 @@ a{
 
 header{
     background-color: #323232;
-    padding: 10px 0;
+    padding: 2px 0;
     color: #fff;
 
+    .contacts{
+        font-size: 16px;
+    }
     .header-city,
     .header-phone a{
         color: $primary-color;
+        font-size: 18px;
     }
-    
+
+    .header-phone a{
+        border-bottom: 1px solid transparent;
+        text-decoration: none;
+    }
+    .header-phone a:hover{
+        border-bottom-color:  $primary-color;
+    }
 
     .logo{
         border-bottom: 0;
-        margin: 0 auto;
+        text-align: center;
         display: block;
-        height: 40px;
+        
         img{
             display: block;
-            width: 80px;
+            width: 172px;
+        }
+        span {
+            margin-top: 5px;
+            line-height: 1;
+            display: block;
+            font-size: 22px;
+            font-family: Helvetica,Arial,sans-serif;
+            color: #fff;
+        }
+        &:hover{
+            transform: scale(1.025);
         }
     }
 
 }
-.c-side{
-    max-width: 1180px;
-}
+
+
 
 

@@ -463,6 +463,11 @@ header {
   .container {
     max-width: 1180px; } }
 
+.gt_y {
+  position: relative;
+  background: transparent url(https://novaktech.ru/wp-content/themes/fr/images/xdom_1-min.jpg.pagespeed.ic.hLWQMidwQj.webp) no-repeat center center;
+  background-size: cover; }
+
 .mastheader {
   background: #b46ae3;
   font-size: 16px; }

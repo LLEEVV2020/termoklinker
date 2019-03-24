@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>scroll проект</title>
+    <title>разработка проект</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="libs/bootstrap.min.css">
     <link rel="stylesheet" href="font/gothampro/stylesheet.css">
     <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
@@ -23,8 +24,8 @@
                 <a data-fancybox data-animation-duration="700" data-src="#Modal2" href="javascript:;" class="header-button">Вызвать замерщика</a>
                 
                 <div class="contacts">
-                    <div class="header-city">Санкт-Петербург</div>
-                    <div class="header-adress">Кондратьевский проспект,<br> БЦ «Graffiti»</div>
+                    <div class="header-city">Г. Киров</div>
+                    <div class="header-adress">Пн.-Пт. 9:00 -  19:00;<br>Сб. – Вс. 9:00 – 17:00;</div>
                     <div class="header-phone"> 
                         <span class="tk-btn-icon fas fa-phone"></span> 
                         <a href="tel:88126482241" rel="nofollow" class="tk-btn-label">+7 (812) 648-22-41</a>
@@ -33,6 +34,32 @@
     
             </div>    
         </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item first">
+                                <a class="nav-link" href="index.php?id=1">Главная</a>
+                            </li><li class="nav-item ">
+                                <a class="nav-link" href="index.php?id=2">Дизайн фасада</a>
+                            </li><li class="nav-item active">
+                                <a class="nav-link" href="index.php?id=3">Каталог термопанелей</a>
+                            </li><li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Портфолио</a>
+                                <ul class="dropdown-menu"><li class="nav-item first">
+                                <a class="nav-link" href="index.php?id=6">Готовые дома</a>
+                            </li></ul>
+                            </li><li class="nav-item last">
+                                <a class="nav-link" href="index.php?id=5">Контакты</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <section>
                 <!--<a data-fancybox="gallery" href="img/logo.png"><img style="width: 80px;" src="img/logo.png"></a>
                 <a  data-fancybox="gallery" href="img/logo.png"><img style="width: 80px;" src="img/logo.png"></a>
@@ -78,6 +105,7 @@
       </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="libs/bootstrap.bundle.min.js"> </script>
     <script src="libs/jquery.fancybox.min.js"> </script>
     <script src="js/main.js"> </script>
 </body>

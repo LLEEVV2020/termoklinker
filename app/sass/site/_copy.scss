@@ -11,14 +11,40 @@ section{
     position: relative;
     background: transparent url(https://novaktech.ru/wp-content/themes/fr/images/xdom_1-min.jpg.pagespeed.ic.hLWQMidwQj.webp) no-repeat center center;
     background-size: cover;
+    .container{
+        min-height: 100vh;
+    }
 
 }
+.section-1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100vh;
+    width: 50%;
+    background-color: rgba(255,255,255,.7);
+}
 
-.main-welcome {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    min-height: 100vh;
+.card-panel{
+    width: 50%;
+    z-index: 1;
     position: relative;
-    overflow: hidden;
+        color: #333;
+    
+    .name{
+        text-transform: uppercase;
+        line-height: 1.2;
+        font-weight: 900;
+        font-size: 38px;
+    }
+    
+    .desc {
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
 }

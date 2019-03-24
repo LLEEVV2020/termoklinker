@@ -18,3 +18,15 @@
     color: #323232;
     text-decoration: none;
 }
+
+.btn-style1{
+    background-color: $primary-color;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: inline-block;
+    color: #323232;
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 700;
+    text-transform: uppercase;
+}

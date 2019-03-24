@@ -1,5 +1,6 @@
 .mastheader{
     background:#b46ae3; 
+    @include DynamicFontSize(16px, 24px, 480px, 1280px, 18px);
   }
   .page-title{
     background:#51a7fa; 

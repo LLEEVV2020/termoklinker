@@ -1,6 +1,5 @@
 .site{
-display:-ms-grid;
-display:grid;
+display: block;
 -ms-grid-columns:2fr 1fr;
     grid-template-columns:2fr 1fr;
     grid-template-areas:"header header"

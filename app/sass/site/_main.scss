@@ -1,0 +1,33 @@
+a{
+    text-decoration: none;
+}
+
+
+header{
+    background-color: #323232;
+    padding: 10px 0;
+    color: #fff;
+
+    .header-city,
+    .header-phone a{
+        color: $primary-color;
+    }
+    
+
+    .logo{
+        border-bottom: 0;
+        margin: 0 auto;
+        display: block;
+        height: 40px;
+        img{
+            display: block;
+            width: 80px;
+        }
+    }
+
+}
+.c-side{
+    max-width: 1180px;
+}
+
+

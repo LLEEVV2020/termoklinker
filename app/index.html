@@ -5,45 +5,84 @@
     <title>scroll проект</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     
 </head>
 <body>
 
     <div class="site">
-        <header class="mastheader">main header</header>
-        <h1 class="page-title">page title</h1>
-        <div class="main-content">
-            
-            <ul>
-                <li><a href="http://termoklinker.pro/products/">образец</a></li>
-                <li><a href="https://docs.modx.pro/komponentyi/minishop2">modx cart</a></li>
-                <li><a href="https://docs.modx.pro/komponentyi/minishop2/interfejs/nastrojkigulp">modx minishop2 настройка</a></li>
-                <li><a href="https://github.com/LLEEVV2020/termoklinker">git</a></li>
-                <li><a href="http://shop.css-js.site/manager/?a=element/template/update&id=1">modx</a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+        <header>
+            <div class="c-side">
+                
+                <div class="contacts">
+                    <div class="header-city">Санкт-Петербург</div>
+                    <div class="header-adress">Кондратьевский проспект,<br> БЦ «Graffiti»</div>
+                    <div class="header-phone"> 
+                        <span class="tk-btn-icon fas fa-phone"></span> 
+                        <a href="tel:88126482241" rel="nofollow" class="tk-btn-label">+7 (812) 648-22-41</a>
+                    </div>
+                </div>
 
-        </div>
-        <aside class="sidebar">sidebar</aside>
-        <footer class="footer">main footer</footer>  
+                <a data-fancybox data-src="#modal" href="javascript:;" class="header-button">Задать вопрос</a>
+
+                <a class="logo">
+                    <img src="img/logo.png" alt="">
+                    <span>EcoStone</span>
+                </a>
+
+                <a data-fancybox data-animation-duration="700" data-src="#Modal2" href="javascript:;" class="header-button">Вызвать замерщика
+
+                </a>
+                
+            </div>    
+        </header>
+        <section>
+                <a data-fancybox="gallery" href="img/logo.png"><img style="width: 80px;" src="img/logo.png"></a>
+                <a  data-fancybox="gallery" href="img/logo.png"><img style="width: 80px;" src="img/logo.png"></a>
+        </section>
+        
+
+        <footer ></footer>  
     </div>
     
-    <script src="js/polyfill_custom.js"> </script>
-    <script src="js/main.js" defer> </script>
+    <form id="hello" action="" method="post" style="display: none; width: 100%; max-width: 660px;" class="">
+        <h2 class="mb-3">
+            Hello!
+        </h2>
+        <p>
+            The first focusable element in the modal gets the focus for better accessibility.
+            <br>
+            The script traps focus within the modal to disable the user to access the content behind it.
+
+            Focus is restored to last focused element when modal closes.
+        </p>
+        <p>
+            <input type="text" value="" name="hi1" class="form-control" placeholder="Example input">
+        </p>
+        <p>
+            <input type="text" value="" name="hi2" class="form-control" placeholder="Another input">
+        </p>
+        <p class="mb-0 text-right">
+            <input data-fancybox-close="" type="button" class="btn btn-primary" value="Submit">
+        </p>
+    </form>
+
+    <!------------------------------------------------------------------->
+    <!--MODAL--->
+    <!---1-->
+    <div style="display: none;" id="modal">
+        <h2>Задать вопрос</h2>
+        <p>You are awesome!</p>
+      </div>
+    <!---2-->
+      <div style="display: none;" id="Modal2" class="animated-modal">
+        <h2>Вызвать замерщика</h2>
+        <p>This is animated content! Cool, right?</p>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="libs/jquery.fancybox.min.js"> </script>
+    <script src="js/main.js"> </script>
 </body>
 </html>

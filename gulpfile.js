@@ -10,7 +10,7 @@ var sourcemaps =  require('gulp-sourcemaps');
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    return gulp.src("app/sass/*.scss")
+    return gulp.src("app/sass/**/*.scss")
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(autoprefixer({
@@ -37,7 +37,7 @@ gulp.task('serve', gulp.parallel('sass', 'js', function() {
         notify: false
     });
 
-    gulp.watch("app/sass/*.scss", gulp.series('sass'));
+    gulp.watch("app/sass/**/*.scss", gulp.series('sass'));
     gulp.watch('app/babel/*.js', gulp.series('js'))
         .on('change', browserSync.reload)
         .on('unlink', function(path, stats) {

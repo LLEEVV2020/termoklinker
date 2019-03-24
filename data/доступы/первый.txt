@@ -1,0 +1,8 @@
+https://www.google.com/recaptcha/admin/site/345611362
+
+6LdinJkUAAAAALGgR_rLSQ6Ys_ZRrU0XOgTrtr1r
+https://developers.google.com/recaptcha/docs/display
+
+6LdinJkUAAAAABKrxIgTZFza8qa-ChK8zw90GHGL
+https://developers.google.com/recaptcha/docs/verify
+

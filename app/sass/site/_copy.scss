@@ -1,7 +1,7 @@
 $main-welcome-h: calc(100vh - 155px);
 
 .section {
-    margin-top: 60px;
+    padding-top: 60px;
     position: relative;
 }
 
@@ -142,4 +142,76 @@ $main-welcome-h: calc(100vh - 155px);
     }
 
     
+}
+
+.section-header{
+    margin-bottom: 35px;
+    .name{
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: 32px;
+        font-weight: 700;
+        color: #333;
+    }
+}
+
+.facade-decoration{
+padding-bottom: 30px;
+}
+.interior-decoration{
+    background-color: #f9f6f6;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+.main-what-price{
+    background-image: url('../img/about-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    height: 350px;
+    .card{
+        box-shadow: 0px 3px 18px 0px rgba(0,0,0,.19);
+        width: 35rem;
+        position: relative;
+        top: -80px;
+        left: 20px;
+        background-color: #fff;
+        padding: 30px 20px;
+        .card-body{
+            .card-title{
+                margin-bottom: 20px;
+                position: relative;
+                text-transform: uppercase;
+                line-height: 1.2;
+                font-size: 32px;
+                font-weight: 700;
+                color: #333;
+            }
+            .card-text{
+                margin-bottom: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+.b-catalog{
+    
+    a{
+        display: block;    
+        margin-top: 25px;
+    }
+    img{
+        display: block;
+        max-height: 170px;
+        margin: 0 auto;
+    }
+    span {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1.3;
+        font-weight: 500;
+        margin: 2px 0 30px;
+    }
 }

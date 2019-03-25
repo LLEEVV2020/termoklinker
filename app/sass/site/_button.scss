@@ -18,15 +18,85 @@
     color: #323232;
     text-decoration: none;
 }
+.section-1{
+    button, a{
+        border-radius: 5px;
+        padding: 10px 15px;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1.1;
+        font-weight: 700;
+        text-transform: uppercase;
+        
+        display: block;
+        height: 55px;
+        line-height: 55px;
+        width: 100%;
+        max-width: 280px;
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+    }
+}
 
-.btn-style1{
+
+.btn-warning{
     background-color: $primary-color;
+        border-color:  $primary-color;
+    &:hover {
+        background-color: #feb919;
+        border-color:  #feb919;
+    }
+    &:active {
+        background-color: #e4a000;
+        border-color:  #e4a000;
+    }
+}
+
+
+.btn-dark{
+    color: #fff;
+        background-color: #333;
+    &:hover, &:active, &:focus  {
+        color: #fff;
+        box-shadow: none;
+    
+    background-color: #505050;
+
+    }
+    
+    
+}
+.btn-custom{
+        border: 1px solid #333;
     border-radius: 5px;
-    padding: 10px 15px;
-    display: inline-block;
     color: #323232;
-    font-size: 14px;
-    line-height: 1.1;
+    line-height: 53px;
     font-weight: 700;
     text-transform: uppercase;
+    &:hover, &:active, &:focus{
+            background-color: #333;
+        color: #fff;
+    }
+}
+.btn-dark:not(:disabled):not(.disabled).active, .btn-dark:not(:disabled):not(.disabled):active, .show>.btn-dark.dropdown-toggle,
+.btn-dark:not(:disabled):not(.disabled).active:focus, .btn-dark:not(:disabled):not(.disabled):active:focus, .show>.btn-dark.dropdown-toggle:focus,
+.btn-warning:not(:disabled):not(.disabled).active:focus, .btn-warning:not(:disabled):not(.disabled):active:focus, .show>.btn-warning.dropdown-toggle:focus{
+    box-shadow: none;
+}
+.btn-warning:not(:disabled):not(.disabled).active:focus, .btn-warning:not(:disabled):not(.disabled):active:focus, .show>.btn-warning.dropdown-toggle:focus{
+    background-color: #e4a000;
+        border-color:  #e4a000;
+}
+
+.btn-dark:not(:disabled):not(.disabled).active, .btn-dark:not(:disabled):not(.disabled):active, .show>.btn-dark.dropdown-toggle{
+    background-color: #323232;
+        border-color:  #323232;
+        color: #fff;
+}
+
+.btn {
+    span + span{
+        padding-left: 4px;
+    }
 }

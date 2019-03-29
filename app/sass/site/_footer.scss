@@ -1,0 +1,36 @@
+footer{
+    padding-top: 40px;
+    background-color: #323232;
+    min-height: 300px;
+    color: #fff;
+    ul{
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    a{
+        color: #fff;
+        border-bottom: 1px solid transparent;
+        
+
+    }
+    a:hover{
+        border-bottom-color: #feb200;
+        text-decoration: none;
+        color: #feb200;
+    }
+
+
+    h3.footer-subtitle {
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #feb200;
+    }
+    p{
+        margin-bottom: 0;
+        color: #feb200;
+        text-transform: uppercase;
+    }
+}
+

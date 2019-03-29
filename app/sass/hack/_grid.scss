@@ -1,6 +1,13 @@
+//@supports ( (display: grid) or (display: -ms-grid)) {
 @supports ( (display: grid) or (display: -ms-grid)) {
-    /*.site{
-        display:-ms-grid;
-        display:grid;
-    }*/
+    .site{
+        //display:-ms-grid;
+        //display:grid;
+
+        .site{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }

@@ -111,9 +111,3 @@ $(".img-5").hover(function () {
     "display": "block"
   });
 });
-
-$(function() {
-  $("#date").mask("99.99.9999");
-  $("#phone").mask("+7(999) 999-9999");
-  $("#cloc").mask("99:99");
-});

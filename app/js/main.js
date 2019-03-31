@@ -55,6 +55,29 @@ window.onload = function () {
       swiper: galleryThumbs
     }
   });
+  /**
+   * all scripts
+   */
+
+  document.querySelectorAll('.swiper-grid').forEach(function (elem) {
+    var galleryThumbs = new Swiper(elem.querySelector('.gallery-thumbs2'), {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true
+    });
+    var galleryTop = new Swiper(elem.querySelector('.gallery-top2'), {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+  });
 };
 
 $(".video-youtube").hover(function () {

@@ -62,7 +62,7 @@ window.onload = function () {
   document.querySelectorAll('.swiper-grid').forEach(function (elem) {
     var galleryThumbs = new Swiper(elem.querySelector('.gallery-thumbs2'), {
       spaceBetween: 10,
-      slidesPerView: 4,
+      slidesPerView: 6,
       freeMode: true,
       watchSlidesVisibility: true,
       watchSlidesProgress: true
@@ -77,6 +77,7 @@ window.onload = function () {
         swiper: galleryThumbs
       }
     });
+    console.log("tttttt");
   });
 };
 

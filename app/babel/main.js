@@ -56,32 +56,32 @@ document.querySelectorAll('.swiper-base').forEach(function(elem) {
   });
 
 
-/**
- * all scripts
- */
-      
-document.querySelectorAll('.swiper-grid').forEach(function (elem) {
+  /**
+   * all scripts
+   */
         
-  var galleryThumbs = new Swiper(elem.querySelector('.gallery-thumbs2'), {
-      spaceBetween: 10,
-      slidesPerView: 4,
-      freeMode: true,
-      
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-    });
-    var galleryTop = new Swiper(elem.querySelector('.gallery-top2'), {
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      thumbs: {
-        swiper: galleryThumbs
-      }
-    });
-         
-});
+  document.querySelectorAll('.swiper-grid').forEach(function (elem) {
+          
+    var galleryThumbs = new Swiper(elem.querySelector('.gallery-thumbs2'), {
+        spaceBetween: 10,
+        slidesPerView: 6,
+        freeMode: true,
+        
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+      var galleryTop = new Swiper(elem.querySelector('.gallery-top2'), {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+          swiper: galleryThumbs
+        }
+      });
+          console.log("tttttt");
+  });
       
 
 };

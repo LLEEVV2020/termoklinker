@@ -1,4 +1,37 @@
-document.querySelectorAll('.swiper-base').forEach(function(elem) {
+let swiper_base_each = document.querySelectorAll(".swiper-base");
+
+[].forEach.call(swiper_base_each, function(elem) {
+  let elemWrap = elem.parentElement.nextElementSibling;
+  new Swiper(elem, {
+    slidesPerView: 4,
+    spaceBetween: 25,
+    loop: true,
+    navigation: {
+      nextEl: elemWrap.querySelectorAll('.swiper-next'),
+      prevEl: elemWrap.querySelectorAll('.swiper-prev'),
+    },
+    breakpoints: {
+      1180: {
+        slidesPerView: 3,
+        spaceBetween: 25,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      }
+    }
+  });
+});
+
+/*document.querySelectorAll('.swiper-base').forEach(function(elem) {
     let elemWrap = elem.parentElement.nextElementSibling;
     new Swiper(elem, {
       slidesPerView: 4,
@@ -27,7 +60,7 @@ document.querySelectorAll('.swiper-base').forEach(function(elem) {
         }
       }
     });
-  });
+  });*/
 
   window.onload = function() {
   var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -60,7 +93,7 @@ document.querySelectorAll('.swiper-base').forEach(function(elem) {
    * all scripts
    */
         
-  document.querySelectorAll('.swiper-grid').forEach(function (elem) {
+ /* document.querySelectorAll('.swiper-grid').forEach(function (elem) {
           
     var galleryThumbs = new Swiper(elem.querySelector('.gallery-thumbs2'), {
         spaceBetween: 10,
@@ -80,9 +113,47 @@ document.querySelectorAll('.swiper-base').forEach(function(elem) {
           swiper: galleryThumbs
         }
       });
-          console.log("tttttt");
-  });
+  });*/
+
+  let swiper_grid_each = document.querySelectorAll(".swiper-grid");
+  
+  [].forEach.call(swiper_grid_each, function(elem) {
+    var galleryThumbs = new Swiper(elem.querySelector('.gallery-thumbs2'), {
+      spaceBetween: 10,
+      slidesPerView: 6,
+      freeMode: true,
       
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper(elem.querySelector('.gallery-top2'), {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+  });  
+
+
+  let swiper = new Swiper('.swiper-container-gallery', {
+   /* pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    },*/
+    
+    loop: true,
+    pagination: {
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
 };
 

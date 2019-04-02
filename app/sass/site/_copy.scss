@@ -17,7 +17,18 @@ $main-welcome-h: calc(100vh - 155px);
 }
 .main-welcome{
     position: relative;
-    background: transparent url(https://novaktech.ru/wp-content/themes/fr/images/xdom_1-min.jpg.pagespeed.ic.hLWQMidwQj.webp) no-repeat center center;
+    //background: transparent url(https://novaktech.ru/wp-content/themes/fr/images/xdom_1-min.jpg.pagespeed.ic.hLWQMidwQj.webp) no-repeat center center;
+    
+
+    background-color: transparent;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/main-img.jpg");
+    @supports ( display: grid){
+        background-image: url("../img/main-img.webp");
+    }
+
     background-size: cover;
     & > .container{
         min-height: 90vh;
@@ -26,7 +37,7 @@ $main-welcome-h: calc(100vh - 155px);
 
 
 }
-.main-welcome::before{
+.main-welcome::before, .main-welcome > i{
     content: "";
     position: absolute;
     top: 0;
@@ -38,6 +49,7 @@ $main-welcome-h: calc(100vh - 155px);
     width: 50%;
     background-color: rgba(255,255,255,.7);
 }
+
 
 .card-panel{
     width: 50%;

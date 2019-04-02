@@ -1,0 +1,124 @@
+.map-wrapper{
+    border: 2px solid #feb200;
+    display: block;
+    img{
+        display: block;
+        width: 100%;
+    }
+    &:hover{
+        border: 2px solid #323232;
+    }
+}
+
+
+.contacts{
+    margin-bottom: 60px;
+    .d-block{
+        display: block;
+        margin-bottom: 1rem;
+    }
+   
+}
+.call-block{
+    background-color: #e3e3e3;
+padding: 50px 0;
+font-family: 'Open Sans';
+.dont-miss-time {
+    background-color: #fff;
+    border-radius: 3px;
+    color: #313131;
+}
+    .header-1{
+        padding: 10px 15px;
+        font-weight: 700;
+        font-size: 38px;
+        text-transform: uppercase;
+        display: block; 
+    }
+    .header-2 {
+        background-color: #313131;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+        padding: 5px 20px;
+        display: block;
+    }
+    .list {
+        margin: 0;
+        list-style: none;
+        padding: 20px;
+        
+        li {
+            display: block;
+            font-size: 18px;
+            font-weight: 500;
+            position: relative;
+            padding-left: 10px;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 4px;
+                height: 4px;
+                border-radius: 100%;
+                background-color: #313131;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .form-custom{
+        color: #323232;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        p {
+            text-transform: none;
+
+        }
+    }
+    input[type=text], input[type=tel]{
+        width: 100%;
+        font-size: 16px;
+        color: #757575;
+        border: 1px solid #757575;
+        text-align: center;
+        font-weight: 700;
+        font-family: Open Sans;
+        height: 32px;
+        padding: 0;
+    }
+    .wrap-input-100{
+        width: 100px;
+        padding: 0 5px;
+    }
+    .submit-btn{
+        transition: background-color .15s,border .15s,color .15s;
+        position: relative;
+        vertical-align: middle;
+        background: 0;
+        border: 0;
+        line-height: 1.2;
+        outline: none;
+        cursor: pointer;
+        white-space: normal;
+
+        font-size: 24px;
+        border-radius: 3px;
+        background-color: #feb200;
+        padding: 13px 15px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #33334a;
+        font-family: "Open Sans";
+
+    }
+    .alert {
+        font-size: 14px;
+        color: #33334a;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+    }
+}

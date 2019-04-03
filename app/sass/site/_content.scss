@@ -1,13 +1,21 @@
 .map-wrapper{
     border: 2px solid #feb200;
     display: block;
+    background-image: url(../img/map.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 230px;
+    
     img{
         display: block;
         width: 100%;
+        display: none;
     }
     &:hover{
         border: 2px solid #323232;
     }
+ 
 }
 
 
@@ -17,7 +25,9 @@ section.contacts{
         display: block;
         margin-bottom: 1rem;
     }
-   
+    @media (max-width: 575px){
+        text-align: center;
+    }
 }
 .call-block{
     background-color: #e3e3e3;
@@ -121,6 +131,12 @@ font-family: 'Open Sans';
         font-family: "Open Sans";
         text-transform: uppercase;
     }
+    @media (max-width: 575px){
+        .list{
+            margin-bottom: 30px;
+        }
+    }
+
 }
 
 .dizajn-fasada{
@@ -1261,6 +1277,12 @@ font-family: 'Open Sans';
 
 .cards-list{
     margin-bottom: 50px;
+    h1{
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
     .category-form{
         border: 1px solid #eee;
         padding: 20px;

@@ -1,5 +1,6 @@
 footer{
     padding-top: 40px;
+    padding-bottom: 20px; 
     background-color: #323232;
     color: #fff;
     ul{
@@ -33,3 +34,11 @@ footer{
     }
 }
 
+
+@media (max-width: 767px){
+    footer{
+        .row > div:last-child{
+            display: none;
+        }
+    }
+}

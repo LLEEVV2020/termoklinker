@@ -1,0 +1,10 @@
+@media (max-width: 991px){
+    .header-button + .header-button{
+        display: none;
+    }
+}
+@media (max-width: 767px){
+    header .contacts{
+        display: none;
+    }
+}

@@ -1,11 +1,11 @@
 .map-wrapper{
     border: 2px solid #feb200;
     display: block;
-    background-image: url(../img/map.png);
+    background-image: url(../img/map.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 230px;
+    min-height: 400px;
     
     img{
         display: block;
@@ -1484,6 +1484,7 @@ font-family: 'Open Sans';
         overflow: hidden;
         position: relative;
         margin-bottom: 25px;
+        cursor: pointer;
         span.name {
             position: absolute;
             top: 0;

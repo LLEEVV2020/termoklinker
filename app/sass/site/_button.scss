@@ -116,3 +116,36 @@
 .button.btn-warning:focus {
     box-shadow: none;
 }
+
+/**
+    Новые прапвки 5.04.2019
+*/
+.btn-wrap-center{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    .tk-btn.tk-btn-style1{
+        transition: background-color .15s,border .15s,color .15s;
+        position: relative;
+        vertical-align: middle;
+        background: 0;
+        border: 0;
+        line-height: 1.2;
+        outline: none;
+        cursor: pointer;
+        white-space: normal;
+
+        background-color: #feb200;
+        border-radius: 5px;
+        padding: 10px 15px;
+        display: inline-block;
+        color: #323232;
+        font-size: 14px;
+        line-height: 1.1;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        width: 260px;
+        height: 45px;
+    }
+}

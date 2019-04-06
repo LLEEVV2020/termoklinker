@@ -15,10 +15,14 @@
       .swiper-slide {
         background-size: cover;
         background-position: center;
+        @media (max-width: 767px){
+          width: 100% !important;
+        }
       }
       .gallery-top2 {
         height: 80%;
         width: 100%;
+
         .swiper-wrapper{
           height: 300px;
         }
@@ -42,10 +46,17 @@
     .swiper-container{
         flex: 0 0 49%;
         max-width: 49%;
+        @media (max-width: 767px){
+          flex: 0 0 100%;
+        max-width: 100%;
+        }
     }
     .gallery-thumbs2 {
         
         padding: 0 0;
+        @media (max-width: 767px){
+          display: none;
+        }
     }
     .gallery-thumbs2 .swiper-wrapper{
         

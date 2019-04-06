@@ -216,3 +216,7 @@ $(window).on('load', function () {
   $svg_anm.fadeOut();
   $preloader.delay(500).fadeOut('slow');
 });
+
+$('[data-fancybox]').fancybox({
+	// Options will go here
+});

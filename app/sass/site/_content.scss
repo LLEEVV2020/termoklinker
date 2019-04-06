@@ -305,6 +305,11 @@ font-family: 'Open Sans';
             display: flex;    
             justify-content: center;
             align-items: center;
+            @media (max-width: 767px){
+                left: 20px;
+           
+            }
+            
         }
         .swiper-button-prev::after,
         .swiper-button-next::after{
@@ -326,6 +331,10 @@ font-family: 'Open Sans';
 
         .swiper-button-next {
             left: 505px;
+            @media (max-width: 767px){
+                left: 170px;
+           
+            }
         }
         .swiper-button-next.swiper-button-disabled, 
         .swiper-button-prev.swiper-button-disabled {
@@ -348,6 +357,9 @@ font-family: 'Open Sans';
                 position: absolute;
                 bottom: 0;
                 left: 20px;
+                @media (max-width: 767px){
+                    bottom: 60px;
+                }
             }
             .buttons {
                 position: absolute;
@@ -356,6 +368,9 @@ font-family: 'Open Sans';
                 max-width: 305px;
                 width: 100%;
                 font-size: 0;
+                @media (max-width: 767px){
+                    display: none;
+                }
                 .tk-btn {
                     height: 40px;
                     line-height: 40px;
@@ -653,6 +668,15 @@ font-family: 'Open Sans';
 }
 
 .work-examples{
+    .name {
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: 32px;
+        font-weight: 700;
+        color: #333;
+        text-align: center;
+        margin: 0 0 30px;
+    }
     a{
         display: block;
         img{

@@ -15,7 +15,7 @@ let swiper_base_each = document.querySelectorAll(".swiper-base");
         slidesPerView: 3,
         spaceBetween: 25,
       },
-      768: {
+      992: {
         slidesPerView: 2,
         spaceBetween: 20,
       },

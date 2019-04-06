@@ -3,6 +3,9 @@
     padding: 30px;
     border-radius: 10px;
     max-width: 600px;
+    @media (max-width: 620px){
+        max-width: 100%;
+    }
 
     .fancybox-button{
         color: #feb100;

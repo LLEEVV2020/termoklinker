@@ -7,6 +7,8 @@ var sass        = require('gulp-sass');
 var babel       = require("gulp-babel");
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps =  require('gulp-sourcemaps');
+var gulpconcat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
@@ -23,10 +25,30 @@ gulp.task('sass', function() {
 });
 // Compile babel into js 
 gulp.task('js', function() {
-    return gulp.src(["app/babel/polyfill_custom.js", "app/babel/main.js"])
+
+    return gulp.src([
+        "app/babel/polyfill_custom.js", 
+        "app/babel/main.js"])
         .pipe(babel())
         .pipe(gulp.dest("app/js"));
+
+
 });
+// Compile babel into js 
+gulp.task('j', function() {
+
+    return gulp.src([
+        "app/libs/jquery-3.2.1.min.js",
+        "app/libs/bootstrap.bundle.min.js",
+        "app/libs/jquery.fancybox.min.js",
+        "app/libs/swiper.min.js",
+        "app/js/polyfill_custom.js", 
+        "app/js/main.js"])
+        .pipe(gulpconcat('all.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest("app/js"));
+});
+
 
 // Static Server + watching scss/html files
 gulp.task('serve', gulp.parallel('sass', 'js', function() {

@@ -120,6 +120,7 @@
 }
 .tk-modal-title {
     margin-bottom: 30px;
+    margin-top: 25px;  
     font-size: 36px;
     text-transform: uppercase;
     font-weight: 500;
@@ -130,6 +131,7 @@
     position: relative;
     width: 350px;
     font-size: 150%;
+    border: 0 solid transparent;
     margin: 0;
     padding: 9px;
     border-radius: 0;  
@@ -142,9 +144,9 @@
 #jGrowl .jGrowl-notification.alert::before{
     content: "";
     position: absolute;
-    top: -39vh;
+    top: -40vh;
     left: -41vw;
-    width: 200vw;
+    width: 300vw;
     height: 200vh;    
     background: rgba(30, 30, 30, 0.9);
     z-index: -1;
@@ -182,4 +184,75 @@
 }
 #jGrowl .ms2-message-success {
     background-color: green !important;
+}
+
+/**
+Новые стили формы
+*/
+.form-wrap-main_bottom{
+    .control-label{
+        margin-bottom: 0;
+    }
+    .form-group{
+        position: relative;
+        max-width: 380px;
+        &>span,
+        &>label{
+            position: absolute;
+            color: #9fa3a7;
+            top: 20px;
+            position: absolute;
+        }
+        &>span{
+            width: 40px;
+            text-align: center;
+            line-height: 0;
+            color: #9fa3a7;
+            font-size: 16px;
+        }
+        &>label {
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+            margin: 0;
+            padding: 0;
+            left: 40px;
+            line-height: 0;
+            font-weight: 400;
+            font-size: 14px;
+            color: #9fa3a7;
+        }
+        .controls{
+            display: flex;
+            .tk-btn-style1 {
+                -webkit-transition: background-color .15s,border .15s,color .15s;
+                transition: background-color .15s,border .15s,color .15s;
+                position: relative;
+                vertical-align: middle;
+                background: 0;
+                border: 0;
+                line-height: 1.2;
+                outline: none;
+                cursor: pointer;
+                white-space: normal;
+                background-color: #feb200;
+                border-radius: 5px;
+                padding: 10px 15px 8px;
+                line-height: 1;
+                display: inline-block;
+                color: #323232;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-top: 15px;
+            }
+        }
+        
+    }
+    .form-group:hover{
+        &>label{
+            display: none;
+        }
+    }
 }
